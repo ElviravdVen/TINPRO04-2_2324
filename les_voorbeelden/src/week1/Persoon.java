@@ -4,7 +4,7 @@
  *******************************/
 
 package week1;
-import java.util.Random;
+import java.util.random.RandomGenerator;
 
 public class Persoon {
     private int persoonID;
@@ -12,7 +12,7 @@ public class Persoon {
     private int leeftijd;
 
     public Persoon() {
-        this.persoonID = new Random().nextInt();
+        this.persoonID = RandomGenerator.getDefault().nextInt();
         this.naam = "persoon nr " + this.persoonID;
     }
 
@@ -28,7 +28,7 @@ public class Persoon {
 
 
     public Drankje haalDrankje(){
-        int tijdstip = new Random().nextInt(0,24);
+        int tijdstip = RandomGenerator.getDefault().nextInt(0,24);
         Drankje drankje = new Drankje();
 
         // Aan de hand van de flowchart schrijf hier je code en vul de naam van het drankje op de volgende manier in:
