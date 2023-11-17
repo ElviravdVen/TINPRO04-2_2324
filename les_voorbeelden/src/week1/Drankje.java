@@ -20,7 +20,6 @@ public class Drankje {
         this.naam = naam;
     }
 
-    @Override
     public String toString() {
         return "Drankje: " + naam;
     }
