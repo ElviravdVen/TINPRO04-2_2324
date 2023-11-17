@@ -30,12 +30,67 @@ public class Persoon {
     public Drankje haalDrankje(){
         int tijdstip = RandomGenerator.getDefault().nextInt(0,24);
         Drankje drankje = new Drankje();
-
-        // Aan de hand van de flowchart schrijf hier je code en vul de naam van het drankje op de volgende manier in:
-        // drankje.setNaam("<Drankje naam>");
-
         // Schrijf hier je code
+        //als het tijdstip < 16 uur en tijdstip > 6 uur == als het overdag is
+        System.out.println("Tijdstip: " + tijdstip);
+        if(tijdstip < 16  && tijdstip > 6){
+            //nextBoolean returnt een boolen == een waar of onwaar waarde
+            if(RandomGenerator.getDefault().nextBoolean()){
+                drankje.setNaam("Koffie");
+            }
+            else {
+                drankje.setNaam("Thee");
+            }
+        }
+        else {
+            //als < 18  -> cola
+            if(this.leeftijd < 18)
+            {
+                drankje.setNaam("Cola");
 
+            }
+            //als >18 && < 21 : mag bier
+            else if (this.leeftijd > 18 && this.leeftijd < 21) {
+                if(RandomGenerator.getDefault().nextBoolean()) {
+                    drankje.setNaam("Bier");
+                }
+                else{
+                    drankje.setNaam("Cola");
+                }
+            }
+            //anders: je mag alles drinken wat je wilt. Kiezen maar (random)!
+            else
+            {
+                int keuzeNummer = RandomGenerator.getDefault().nextInt() %5;
+                if(keuzeNummer == 0) {
+                    drankje.setNaam("Sterke drank");
+                } else if (keuzeNummer == 1){
+                    drankje.setNaam("Bier");
+                } else if (keuzeNummer == 2) {
+                    drankje.setNaam("Koffie");
+                } else if (keuzeNummer == 3) {
+                    drankje.setNaam("Thee");
+                }
+                else {
+                    drankje.setNaam("Frisje");
+                }
+
+                //Andere manier om het bovenstaande uit te werken is een switch
+                // ipv een heel lange if-else constructie
+                switch (keuzeNummer) {
+                    case 0 -> drankje.setNaam("Sterke drank");
+                    case 1 -> drankje.setNaam("Bier");
+                    case 2 -> drankje.setNaam("Koffie");
+                    case 3 -> drankje.setNaam("Thee");
+                    case 4 -> drankje.setNaam("Bier");
+                    case 5 -> drankje.setNaam("Frisje");
+                }
+            }
+
+        }
+
+        //anders
+        //meer keuze
 
         return drankje;
     }

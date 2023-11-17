@@ -15,5 +15,9 @@ public class App {
 
         System.out.println("Persoon haalt drankje op: ");
         System.out.println(persoon1.haalDrankje().toString());
+
+        Gebouw flat = new Gebouw(3, "rood", "plat");
+        flat.pasGebouwKleurAan("blauw");
+        System.out.println(flat.toString());
     }
 }
