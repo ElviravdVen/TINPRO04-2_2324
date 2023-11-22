@@ -30,7 +30,7 @@ public class AlphabetSequence {
         String alphabet = "abcdefghijklmnopqrstuwvxyz";
         Scanner inputScanner = new Scanner(System.in);
         int gebruikers_input = 0;
-        char run = 'j';
+        String run = "ja";
 
         while (run.equalsIgnoreCase("ja")) {
             System.out.println("Voer een positief, geheel getal in:");
@@ -54,7 +54,7 @@ public class AlphabetSequence {
             System.out.println("""
                     Wilt u nog een getal invoeren? Type dan "Ja"
                     Wilt u afsluiten? Type dan "Nee".""");
-            run = inputScanner.next().charAt(0);
+            run = inputScanner.next();
         }
     }
 }
