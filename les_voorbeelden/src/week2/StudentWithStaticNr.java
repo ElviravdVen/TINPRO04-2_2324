@@ -7,11 +7,20 @@ package week2;
 
 public class StudentWithStaticNr {
     public static int countStudents;
-    public int studentNumber;
+    private int studentNumber;
     private String name;
 
     public StudentWithStaticNr() {
         this.studentNumber = countStudents + 1;
         countStudents++;
+        this.name = "";
+    }
+
+    public int getStudentNumber() {
+        return studentNumber;
+    }
+
+    public String getName() {
+        return name;
     }
 }
