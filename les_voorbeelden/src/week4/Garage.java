@@ -5,9 +5,13 @@
 
 package week4;
 
-public class Garage {
+public class Garage{
     public static void main(String[] args) {
-        Auto opel = new Opel();
-        opel.printAuto();
+
+        Auto opel2 = new Opel();
+        //opel2.printAuto("Eigenaal: Elvira");
+
     }
+
+
 }

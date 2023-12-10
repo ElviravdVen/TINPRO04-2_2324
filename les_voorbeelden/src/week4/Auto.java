@@ -5,7 +5,7 @@
 
 package week4;
 
-import static java.lang.StringTemplate.STR;
+//import static java.lang.StringTemplate.STR;
 
 public class Auto {
     private int prijs;
@@ -22,10 +22,10 @@ public class Auto {
                 ";\n}");
     }
 
-    public void printAuto_Java22() {
-        System.out.println(STR."""
-                Auto {
-                    prijs = \{ prijs };
-                }""");
-    }
+//    public void printAuto_Java22() {
+//        System.out.println(STR."""
+//                Auto {
+//                   prijs = x;
+//                }""");
+//    }
 }

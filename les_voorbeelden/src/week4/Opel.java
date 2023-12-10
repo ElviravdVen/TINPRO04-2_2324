@@ -21,6 +21,11 @@ public class Opel extends Auto{
         System.out.println(this.toString());
     }
 
+    public void printAuto(String extra){
+        this.printAuto();
+        System.out.println(extra);
+    }
+
     @Override
     public String toString() {
         return "\nIn de toString methode: \nOpel {" +
