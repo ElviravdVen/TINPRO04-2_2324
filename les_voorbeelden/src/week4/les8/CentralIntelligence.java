@@ -19,6 +19,7 @@ public class CentralIntelligence {
             drone.performTask(generateTask());
         }
         //After all tasks have been handled print the type and properties of each drone.
+        System.out.println("\n\n----------");
         for(Drone drone: drones){
             drone.printInfo();
         }
