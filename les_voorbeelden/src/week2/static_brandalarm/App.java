@@ -1,3 +1,5 @@
+package week2.static_brandalarm;
+
 /**
  * Matej Skelo (m.skelo@hr.nl) - 2023/11/24
  * Spelen met static
@@ -19,5 +21,5 @@ public class App {
             System.out.println("Het brandalarm van huisnummer " + flatgebouw[i].getHuisnummer() + " is " + flatgebouw[i].brandalarm);
         }
 
-    }   
+    }
 }

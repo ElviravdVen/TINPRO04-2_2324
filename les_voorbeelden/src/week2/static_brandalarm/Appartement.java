@@ -1,3 +1,5 @@
+package week2.static_brandalarm;
+
 public class Appartement {
     /************** FIELDS **************/
     private int huisnummer;
