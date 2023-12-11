@@ -6,7 +6,7 @@
 package week5.les9;
 
 public class Figuur {
-    protected int lengte;
+    int lengte;
     protected int breedte;
     protected double oppervlakte;
     protected double omtrek;

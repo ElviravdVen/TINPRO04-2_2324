@@ -14,6 +14,12 @@ public class AverageFinder {
         }
         double avg = findAverage(args);
         System.out.println("The average is " + avg);
+//        Rekenmachine rm = new Rekenmachine();
+//        System.out.println(rm.telOp(5.5, 7.3));
+//
+//        System.out.println(rm.telOp(5, 7.3));
+//
+//        System.out.println(rm.telOp("5", 7));
     }
 
     private static double findAverage(String[] input) {
@@ -21,6 +27,6 @@ public class AverageFinder {
         for (String s : input) {
             result += Integer.parseInt(s);
         }
-        return result;
+        return result/input.length;
     }
 }

@@ -6,13 +6,4 @@
 package week5.les9;
 
 public class Vierkant extends Figuur{
-
-    protected double berekenOppervlakte() {
-        return super.berekenOppervlakte();
-    }
-
-
-    protected double berekenOmtrek() {
-        return super.berekenOmtrek();
-    }
 }
