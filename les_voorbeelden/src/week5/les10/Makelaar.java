@@ -18,7 +18,7 @@ public class Makelaar {
 
     }
     public void koppelHuisAanBewoner(Huis h, Bewoner b){
-        h.setBewoner = b;
-        b.setHuis = h;
+        h.setBewoner(b);
+        b.setHuis(h);
     }
 }
